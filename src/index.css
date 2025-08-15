@@ -1,0 +1,12 @@
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media only screen and (orientation:landscape) and (max-height: 700px)
+{
+  body {
+    /* height: 100%; */
+    overflow: hidden;
+  }
+}

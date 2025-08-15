@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+  /* color: #d18800; */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 3s linear;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  0% { transform: scale(1); opacity: 0.5; }
+  50% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.5; }
+}
+
+button {
+  font-size: calc(10px + 2vmin);
+}
