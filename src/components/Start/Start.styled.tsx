@@ -37,7 +37,7 @@ const TextStyledContainer = styled.div`
   align-items: center;
   flex-direction: column;
 `
-const StyledWord = styled.div`
+const StyledGame = styled.div`
   width: 100vw;
   height: 80vh;
   display: flex;
@@ -63,7 +63,7 @@ const StyledPointsContainer = styled.div`
 export {
   StyledPaper,
   StyledLogo,
-  StyledWord,
+  StyledGame,
   TimerProgressBarStyledContainer,
   TextStyledContainer,
   HeaderStyledContainer,

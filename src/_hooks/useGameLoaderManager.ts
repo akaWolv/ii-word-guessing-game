@@ -1,0 +1,65 @@
+import { useEffect, useRef, useState } from 'react'
+import Cookie from 'js-cookie'
+import {default as WordsDB} from 'constants/Words'
+import { Word } from 'interfaces'
+
+const GAME_WORDS_COOKIE = 'game-words'
+const GAME_PARAMS_COOKIE = 'game-params'
+
+const useGameLoaderManager = () => {
+  const [isNewGameInitialized, setIsNewGameInitialized] = useState<boolean>(false)
+
+  const _createNewShuffledArray = (givenArray: any[]): any[] => {
+    const array = [...givenArray]
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array
+  }
+
+  const _getRandomWords = (category: string = '', numberOfWords: number = 0): any[] => {
+    const allWordsFromCategory = WordsDB[category as keyof typeof WordsDB]
+    const randomWords = _createNewShuffledArray(allWordsFromCategory).slice(0, numberOfWords)
+    return randomWords
+  }
+
+  const setUpNewGame = (category: string = '', numberOfWords: number = 0, gameTime: number = 0) => {
+    // @todo: validates params
+    const words = _getRandomWords(category, numberOfWords)
+      .map(word => ({
+        id: encodeURIComponent(String(word.name).toLowerCase()),
+        text: word.name,
+        description: word.description,
+        isGuessed: false
+      }))
+    saveGameWords(words)
+    saveGameParams(category, numberOfWords, gameTime)
+    setIsNewGameInitialized(true);
+  }
+
+  const loadGameWords = (): Word[] => {
+    const words = JSON.parse(Cookie.get(GAME_WORDS_COOKIE) || '{}')
+    return words as Word[]
+  }
+
+  const saveGameWords = (words: Word[]) => {
+    Cookie.set(GAME_WORDS_COOKIE, JSON.stringify(words))
+  }
+
+  const saveGameParams = (category: string, numberOfWords: number, gameTime: number) => {
+    Cookie.set(GAME_PARAMS_COOKIE, JSON.stringify({category, numberOfWords, gameTime}))
+  }
+  const getGameParams = () => JSON.parse(Cookie.get(GAME_PARAMS_COOKIE) || '{}')
+
+  return {
+    setUpNewGame,
+    isNewGameInitialized: () => isNewGameInitialized,
+    loadGameWords,
+    saveGameWords,
+    getGameParams
+  }
+}
+
+
+export default useGameLoaderManager

@@ -2,11 +2,12 @@ import * as React from 'react';
 import LinearProgress, { LinearProgressProps } from '@mui/material/LinearProgress';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import { Chip } from '@mui/material';
+import { useSelector } from 'react-redux';
+import { RootState } from 'stores/stopwatch';
 
 const ALERTING_AMMOUNT_OF_TIME = 10
 
-function TimerProgressBar(props: LinearProgressProps & { value: number, time: number }) {
+const TimerProgressBar: React.FC<any> = (props: LinearProgressProps & { value: number, time: number }) => {
   const { time } = props
 
   const getTimer = () => {
@@ -34,20 +35,19 @@ function TimerProgressBar(props: LinearProgressProps & { value: number, time: nu
 }
 
 export default function LinearWithValueLabel() {
-  const totalTime = 62
-  const [timeLeft, setTimeLeft] = React.useState(totalTime);
-  const [progress, setProgress] = React.useState(100);
+  const timeLeft = useSelector((state: RootState) => state.stopwatch.seconds)
+  const initialTime = useSelector((state: RootState) => state.stopwatch.initialSeconds)
+  const isAnyTimeLeft = useSelector((state: RootState) => state.stopwatch.isAnyTimeLeft)
 
-  React.useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft((prevTimeLeft) => prevTimeLeft > 0 ? prevTimeLeft - 1 : 0);
-    }, 1000);
-    return () => {
-      clearInterval(timer);
-    };
-  }, []);
+  const getProgress = () => Math.floor((timeLeft / initialTime) * 100);
 
-  const getProgress = () => Math.floor((timeLeft / totalTime) * 100);
+  if (!isAnyTimeLeft) {
+    return <Box sx={{ width: '100%', textAlign: 'center' }}>
+      <Typography variant="h3" color="text.secondary">
+        Times up!
+      </Typography>
+    </Box>
+  }
 
   return (
     <Box sx={{ width: '100%' }}>

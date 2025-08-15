@@ -1,10 +1,11 @@
 import { useEffect, useRef, useState } from 'react'
 import Cookie from 'js-cookie'
 import { useDispatch, useSelector } from 'react-redux'
-import { setTime, setIntervalLoopId } from 'features/stopwatch/stopwatchSlice'
+import { setTime, setIntervalLoopId, setInitialTime } from 'features/stopwatch/stopwatchSlice'
 import { RootState } from 'stores/stopwatch'
 
 const STOPWATCH_COOKIE = 'stopwatch'
+const STOPWATCH_INITIAL_COOKIE = 'stopwatch-initial'
 
 const useStopwatchManager = () => {
   const intervalLoopId = useSelector((state: RootState) => state.stopwatch.intervalLoopId)
@@ -25,7 +26,7 @@ const useStopwatchManager = () => {
 
     let newTime = (savedTime || 0)
     intervalId.current = setInterval(() => {
-      ++newTime
+      --newTime
       dispatch(setTime(newTime))
       Cookie.set(STOPWATCH_COOKIE, String(newTime))
     }, 1000)
@@ -38,13 +39,18 @@ const useStopwatchManager = () => {
       return
     }
 
-    setSavedTime(Number(Cookie.get(STOPWATCH_COOKIE) || 0))
+    const storedCurrentTime = Number(Cookie.get(STOPWATCH_COOKIE) || 0)
+    setSavedTime(storedCurrentTime)
+    dispatch(setTime(storedCurrentTime))
+    dispatch(setInitialTime(Number(Cookie.get(STOPWATCH_INITIAL_COOKIE) || 0)))
     setIsRunning(true)
   }
 
-  const resetTimer = () => {
-    setSavedTime(0)
-    Cookie.set(STOPWATCH_COOKIE, String(0))
+  const resetTimer = (time: number) => {
+    setSavedTime(time)
+    setIsRunning(false)
+    Cookie.set(STOPWATCH_COOKIE, String(time))
+    Cookie.set(STOPWATCH_INITIAL_COOKIE, String(time))
   }
 
   const stopTimer = () => {
@@ -59,10 +65,10 @@ const useStopwatchManager = () => {
     setIsRunning(false)
   }
 
-  const restartTimer = () => {
-    resetTimer()
-    resumeTimer()
-  }
+  // const restartTimer = (time: number) => {
+  //   resetTimer(time)
+  //   resumeTimer()
+  // }
 
   useEffect(loop, [isRunning])
 
@@ -70,7 +76,7 @@ const useStopwatchManager = () => {
     resumeTimer,
     resetTimer,
     stopTimer,
-    restartTimer
+    // restartTimer
   }
 }
 

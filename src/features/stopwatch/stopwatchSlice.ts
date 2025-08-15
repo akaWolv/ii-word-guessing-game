@@ -3,14 +3,18 @@ import type { PayloadAction } from '@reduxjs/toolkit'
 
 export interface CounterState {
   seconds: number
+  initialSeconds: number
   time: string
   intervalLoopId: null|NodeJS.Timer
+  isAnyTimeLeft: boolean
 }
 
 const initialState: CounterState = {
   seconds: 0,
+  initialSeconds: 0,
   time: '',
-  intervalLoopId: null
+  intervalLoopId: null,
+  isAnyTimeLeft: false
 }
 
 const getTime = (seconds: number) => {
@@ -26,6 +30,10 @@ export const stopwatchSlice = createSlice({
     setTime: (state, action: PayloadAction<number>) => {
       state.seconds = action.payload
       state.time = getTime(action.payload)
+      state.isAnyTimeLeft = state.seconds > 0
+    },
+    setInitialTime: (state, action: PayloadAction<number>) => {
+      state.initialSeconds = action.payload
     },
     setIntervalLoopId: (state, action: PayloadAction<null|NodeJS.Timer>) => {
       state.intervalLoopId = action.payload
@@ -33,6 +41,6 @@ export const stopwatchSlice = createSlice({
   },
 })
 
-export const { setTime, setIntervalLoopId } = stopwatchSlice.actions
+export const { setTime, setInitialTime, setIntervalLoopId } = stopwatchSlice.actions
 
 export default stopwatchSlice.reducer
