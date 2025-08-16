@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useState } from 'react'
 import Cookie from 'js-cookie'
 import {default as WordsDB} from 'constants/Words'
 import { Word } from 'interfaces'
@@ -28,8 +28,8 @@ const useGameLoaderManager = () => {
     // @todo: validates params
     const words = _getRandomWords(category, numberOfWords)
       .map(word => ({
-        id: encodeURIComponent(String(word.name).toLowerCase()),
-        text: word.name,
+        id: encodeURIComponent(String(word.text).toLowerCase()),
+        text: word.text,
         description: word.description,
         isGuessed: false
       }))
@@ -39,12 +39,11 @@ const useGameLoaderManager = () => {
   }
 
   const loadGameWords = (): Word[] => {
-    const words = JSON.parse(Cookie.get(GAME_WORDS_COOKIE) || '{}')
+    const words = JSON.parse(Cookie.get(GAME_WORDS_COOKIE) || '[]')
     return words as Word[]
   }
 
   const saveGameWords = (words: Word[]) => {
-    Cookie.set(GAME_WORDS_COOKIE, JSON.stringify(words))
   }
 
   const saveGameParams = (category: string, numberOfWords: number, gameTime: number) => {

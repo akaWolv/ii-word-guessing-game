@@ -3,26 +3,20 @@ import { Paper } from '@mui/material'
 
 // Global
 const StyledPaper = styled(Paper)`
-  min-width: 780px;
-  min-height: 380px;
+  min-width: 90vw;
+  min-height: 90vh;
 
-  margin: 1em;
-  padding-bottom: 1em !important;
+  margin: 0;
+  margin-top: 25vh;
+  padding: 1em !important;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  gap: 20px;
 `
 
-// Header section
-const HeaderStyledContainer = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-`
 const StyledLogo = styled.img`
   width: 35px;
   pointer-events: none;
@@ -66,6 +60,5 @@ export {
   StyledGame,
   TimerProgressBarStyledContainer,
   TextStyledContainer,
-  HeaderStyledContainer,
   StyledPointsContainer
 }

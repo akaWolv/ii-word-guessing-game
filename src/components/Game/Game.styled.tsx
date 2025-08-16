@@ -3,26 +3,22 @@ import { Paper } from '@mui/material'
 
 // Global
 const StyledPaper = styled(Paper)`
-  min-width: 780px;
-  min-height: 380px;
+  min-width: 90vw;
+  min-height: 90vh;
 
-  margin: 1em;
-  padding-bottom: 1em !important;
+  margin: 0;
+  margin-top: 25vh;
+  padding: 1em !important;
 
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-`
-
-// Header section
-const HeaderStyledContainer = styled.div`
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
+
+  touch-action: none;
 `
+
+// Header section
 const StyledLogo = styled.img`
   width: 35px;
   pointer-events: none;
@@ -51,21 +47,10 @@ const TimerProgressBarStyledContainer = styled.div`
     width :100%;   
 `
 
-// Bottom section
-const StyledPointsContainer = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 10px;
-`
-
 export {
   StyledPaper,
   StyledLogo,
   StyledGame,
   TimerProgressBarStyledContainer,
   TextStyledContainer,
-  HeaderStyledContainer,
-  StyledPointsContainer
 }

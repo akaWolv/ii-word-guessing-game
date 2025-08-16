@@ -1,1423 +1,1423 @@
 const Words = {
     "popular-people": [
         {
-            "name": "Robert Lewandowski",
+            "text": "Robert Lewandowski",
             "description": "Najsłynniejszy polski piłkarz."
         },
         {
-            "name": "Iga Świątek",
+            "text": "Iga Świątek",
             "description": "Tenisistka, numer 1 na świecie."
         },
         {
-            "name": "Karol Wojtyła",
+            "text": "Karol Wojtyła",
             "description": "Papież Jan Paweł II."
         },
         {
-            "name": "Maria Skłodowska-Curie",
+            "text": "Maria Skłodowska-Curie",
             "description": "Noblistka, polska chemiczka."
         },
         {
-            "name": "Lech Wałęsa",
+            "text": "Lech Wałęsa",
             "description": "Przywódca Solidarności."
         },
         {
-            "name": "Fryderyk Chopin",
+            "text": "Fryderyk Chopin",
             "description": "Słynny polski kompozytor."
         },
         {
-            "name": "Mikołaj Kopernik",
+            "text": "Mikołaj Kopernik",
             "description": "Astronom z Torunia."
         },
         {
-            "name": "Adam Małysz",
+            "text": "Adam Małysz",
             "description": "Legendarny skoczek narciarski."
         },
         {
-            "name": "Wisława Szymborska",
+            "text": "Wisława Szymborska",
             "description": "Noblistka, polska poetka."
         },
         {
-            "name": "Olga Tokarczuk",
+            "text": "Olga Tokarczuk",
             "description": "Pisarka, noblistka."
         },
         {
-            "name": "Jerzy Owsiak",
+            "text": "Jerzy Owsiak",
             "description": "Szef Wielkiej Orkiestry."
         },
         {
-            "name": "Adam Mickiewicz",
+            "text": "Adam Mickiewicz",
             "description": "Wieszcz narodowy, poeta."
         },
         {
-            "name": "Krzysztof Krawczyk",
+            "text": "Krzysztof Krawczyk",
             "description": "Wokalista, znane hity."
         },
         {
-            "name": "Robert Makłowicz",
+            "text": "Robert Makłowicz",
             "description": "Krytyk kulinarny, podróżnik."
         },
         {
-            "name": "Magda Gessler",
+            "text": "Magda Gessler",
             "description": "Restauratorka i osobowość TV."
         },
         {
-            "name": "Kamil Stoch",
+            "text": "Kamil Stoch",
             "description": "Skoczek narciarski, mistrz."
         },
         {
-            "name": "Andrzej Duda",
+            "text": "Andrzej Duda",
             "description": "Prezydent Polski."
         },
         {
-            "name": "Donald Tusk",
+            "text": "Donald Tusk",
             "description": "Obecny premier Polski."
         },
         {
-            "name": "Agnieszka Radwańska",
+            "text": "Agnieszka Radwańska",
             "description": "Tenisistka, 'Isia'."
         },
         {
-            "name": "Józef Piłsudski",
+            "text": "Józef Piłsudski",
             "description": "Marszałek, ojciec niepodległości."
         },
         {
-            "name": "Tadeusz Kościuszko",
+            "text": "Tadeusz Kościuszko",
             "description": "Generał, bohater narodowy."
         },
         {
-            "name": "Robert Kubica",
+            "text": "Robert Kubica",
             "description": "Kierowca Formuły 1."
         },
         {
-            "name": "Dawid Podsiadło",
+            "text": "Dawid Podsiadło",
             "description": "Piosenkarz, autor tekstów."
         },
         {
-            "name": "Julia Wieniawa",
+            "text": "Julia Wieniawa",
             "description": "Młoda aktorka i piosenkarka."
         },
         {
-            "name": "Friz",
+            "text": "Friz",
             "description": "Najpopularniejszy polski YouTuber."
         },
         {
-            "name": "Ewa Chodakowska",
+            "text": "Ewa Chodakowska",
             "description": "Trenerka fitness, guru."
         },
         {
-            "name": "Anna Lewandowska",
+            "text": "Anna Lewandowska",
             "description": "Żona Roberta, trenerka."
         },
         {
-            "name": "Andrzej Sapkowski",
+            "text": "Andrzej Sapkowski",
             "description": "Twórca Wiedźmina."
         },
         {
-            "name": "Borys Szyc",
+            "text": "Borys Szyc",
             "description": "Popularny polski aktor."
         },
         {
-            "name": "Marcin Gortat",
+            "text": "Marcin Gortat",
             "description": "Były koszykarz NBA."
         },
         {
-            "name": "Małgorzata Kożuchowska",
+            "text": "Małgorzata Kożuchowska",
             "description": "Aktorka, gwiazda seriali."
         },
         {
-            "name": "Martyna Wojciechowska",
+            "text": "Martyna Wojciechowska",
             "description": "Podróżniczka i dziennikarka."
         },
         {
-            "name": "Maciej Stuhr",
+            "text": "Maciej Stuhr",
             "description": "Aktor, satyryk, prezenter."
         },
         {
-            "name": "Mariusz Pudzianowski",
+            "text": "Mariusz Pudzianowski",
             "description": "Strongman i zawodnik MMA."
         },
         {
-            "name": "Jan Błachowicz",
+            "text": "Jan Błachowicz",
             "description": "Zawodnik MMA, mistrz UFC."
         },
         {
-            "name": "Joanna Jędrzejczyk",
+            "text": "Joanna Jędrzejczyk",
             "description": "Mistrzyni MMA, ikona sportu."
         },
         {
-            "name": "Agnieszka Holland",
+            "text": "Agnieszka Holland",
             "description": "Słynna reżyserka filmowa."
         },
         {
-            "name": "Anja Rubik",
+            "text": "Anja Rubik",
             "description": "Polska modelka światowa."
         },
         {
-            "name": "Jan Kiepura",
+            "text": "Jan Kiepura",
             "description": "Śpiewak operowy, tenor."
         },
         {
-            "name": "Justyna Kowalczyk",
+            "text": "Justyna Kowalczyk",
             "description": "Biegaczka narciarska."
         },
         {
-            "name": "Małgorzata Rozenek",
+            "text": "Małgorzata Rozenek",
             "description": "Perfekcyjna Pani Domu."
         },
         {
-            "name": "Wojciech Cejrowski",
+            "text": "Wojciech Cejrowski",
             "description": "Podróżnik, konserwatysta."
         },
         {
-            "name": "Beata Kozidrak",
+            "text": "Beata Kozidrak",
             "description": "Wokalistka zespołu Bajm."
         },
         {
-            "name": "Roman Polański",
+            "text": "Roman Polański",
             "description": "Słynny reżyser filmowy."
         },
         {
-            "name": "Irena Sendlerowa",
+            "text": "Irena Sendlerowa",
             "description": "Bohaterka II wojny światowej."
         },
         {
-            "name": "Krzysztof Ibisz",
+            "text": "Krzysztof Ibisz",
             "description": "Prezenter, wiecznie młody."
         },
         {
-            "name": "Stanisław Lem",
+            "text": "Stanisław Lem",
             "description": "Pisarz science fiction."
         },
         {
-            "name": "Tomasz Kot",
+            "text": "Tomasz Kot",
             "description": "Aktor, grał Rysia."
         },
         {
-            "name": "Paweł Małaszyński",
+            "text": "Paweł Małaszyński",
             "description": "Aktor z wielu seriali."
         },
         {
-            "name": "Jerzy Stuhr",
+            "text": "Jerzy Stuhr",
             "description": "Znany aktor i reżyser."
         },
         {
-            "name": "Kazimierz Deyna",
+            "text": "Kazimierz Deyna",
             "description": "Legenda polskiej piłki."
         },
         {
-            "name": "Zbigniew Boniek",
+            "text": "Zbigniew Boniek",
             "description": "Piłkarz i prezes PZPN."
         },
         {
-            "name": "Jan Englert",
+            "text": "Jan Englert",
             "description": "Dyrektor Teatru Narodowego."
         },
         {
-            "name": "Czesław Niemen",
+            "text": "Czesław Niemen",
             "description": "Wokalista, 'Dziwny jest ten świat'."
         },
         {
-            "name": "Krystyna Janda",
+            "text": "Krystyna Janda",
             "description": "Wybitna polska aktorka."
         },
         {
-            "name": "Tomasz Adamek",
+            "text": "Tomasz Adamek",
             "description": "Polski bokser."
         },
         {
-            "name": "Andrzej Gołota",
+            "text": "Andrzej Gołota",
             "description": "Polski bokser wagi ciężkiej."
         },
         {
-            "name": "Marcin Prokop",
+            "text": "Marcin Prokop",
             "description": "Prezenter, dziennikarz TV."
         },
         {
-            "name": "Robert Biedroń",
+            "text": "Robert Biedroń",
             "description": "Polityk, prezydent Słupska."
         },
         {
-            "name": "Michał Żebrowski",
+            "text": "Michał Żebrowski",
             "description": "Znany aktor filmowy."
         },
         {
-            "name": "Kamil Bednarek",
+            "text": "Kamil Bednarek",
             "description": "Wokalista reggae."
         },
         {
-            "name": "Andrzej Piaseczny",
+            "text": "Andrzej Piaseczny",
             "description": "Piosenkarz, 'Piasek'."
         },
         {
-            "name": "Otylia Jędrzejczak",
+            "text": "Otylia Jędrzejczak",
             "description": "Polska pływaczka."
         },
         {
-            "name": "Marcin Gortat",
+            "text": "Marcin Gortat",
             "description": "Były koszykarz NBA."
         },
         {
-            "name": "Rafał Brzozowski",
+            "text": "Rafał Brzozowski",
             "description": "Prezenter, wokalista."
         },
         {
-            "name": "Kayah",
+            "text": "Kayah",
             "description": "Piosenkarka, wokalistka."
         },
         {
-            "name": "Szymon Hołownia",
+            "text": "Szymon Hołownia",
             "description": "Marszałek Sejmu."
         },
         {
-            "name": "Kazimierz Wielki",
+            "text": "Kazimierz Wielki",
             "description": "Ostatni król z dynastii."
         },
         {
-            "name": "Jan III Sobieski",
+            "text": "Jan III Sobieski",
             "description": "Król, pogromca Turków."
         },
         {
-            "name": "Henryk Sienkiewicz",
+            "text": "Henryk Sienkiewicz",
             "description": "Pisarz, noblista."
         },
         {
-            "name": "Władysław Reymont",
+            "text": "Władysław Reymont",
             "description": "Pisarz, noblista za 'Chłopów'."
         },
         {
-            "name": "Czesław Miłosz",
+            "text": "Czesław Miłosz",
             "description": "Poeta, noblista."
         },
         {
-            "name": "Józef Chełmoński",
+            "text": "Józef Chełmoński",
             "description": "Wybitny malarz."
         },
         {
-            "name": "Zbigniew Cybulski",
+            "text": "Zbigniew Cybulski",
             "description": "Polski James Dean."
         },
         {
-            "name": "Filip Chajzer",
+            "text": "Filip Chajzer",
             "description": "Dziennikarz, prezenter."
         },
         {
-            "name": "Anna Przybylska",
+            "text": "Anna Przybylska",
             "description": "Zmarła aktorka."
         },
         {
-            "name": "Ewa Farna",
+            "text": "Ewa Farna",
             "description": "Polska i czeska piosenkarka."
         },
         {
-            "name": "Margaret",
+            "text": "Margaret",
             "description": "Piosenkarka i autorka."
         },
         {
-            "name": "Katarzyna Nosowska",
+            "text": "Katarzyna Nosowska",
             "description": "Wokalistka Hey."
         },
         {
-            "name": "Wojciech Mann",
+            "text": "Wojciech Mann",
             "description": "Dziennikarz muzyczny."
         },
         {
-            "name": "Piotr Gąsowski",
+            "text": "Piotr Gąsowski",
             "description": "Aktor i prezenter."
         },
         {
-            "name": "Sławomir Świerzyński",
+            "text": "Sławomir Świerzyński",
             "description": "Lider Bayer Full."
         },
         {
-            "name": "Tadeusz Sznuk",
+            "text": "Tadeusz Sznuk",
             "description": "Prezenter, Jeden z dziesięciu"
         },
         {
-            "name": "Janina Ochojska",
+            "text": "Janina Ochojska",
             "description": "Szefowa Polskiej Akcji."
         },
         {
-            "name": "Andrzej Stasiuk",
+            "text": "Andrzej Stasiuk",
             "description": "Pisarz i publicysta."
         },
         {
-            "name": "Maciej Maleńczuk",
+            "text": "Maciej Maleńczuk",
             "description": "Wokalista, bard."
         },
         {
-            "name": "Zbigniew Wodecki",
+            "text": "Zbigniew Wodecki",
             "description": "Wokalista, muzyk."
         },
         {
-            "name": "Grzegorz Turnau",
+            "text": "Grzegorz Turnau",
             "description": "Piosenkarz, kompozytor."
         },
         {
-            "name": "Krzysztof Penderecki",
+            "text": "Krzysztof Penderecki",
             "description": "Znany kompozytor."
         },
         {
-            "name": "Małgorzata Foremniak",
+            "text": "Małgorzata Foremniak",
             "description": "Aktorka, jurorka."
         },
         {
-            "name": "Jerzy Dudek",
+            "text": "Jerzy Dudek",
             "description": "Bramkarz, bohater finału."
         },
         {
-            "name": "Taco Hemingway",
+            "text": "Taco Hemingway",
             "description": "Jeden z czołowych raperów."
         },
         {
-            "name": "Quebonafide",
+            "text": "Quebonafide",
             "description": "Raper, muzyk."
         },
         {
-            "name": "Szymon Majewski",
+            "text": "Szymon Majewski",
             "description": "Satyryk, prezenter."
         },
         {
-            "name": "Marcin Dorociński",
+            "text": "Marcin Dorociński",
             "description": "Popularny aktor filmowy."
         },
         {
-            "name": "Michał Milowicz",
+            "text": "Michał Milowicz",
             "description": "Aktor, wokalista."
         },
         {
-            "name": "Andrzej Mleczko",
+            "text": "Andrzej Mleczko",
             "description": "Rysownik, satyryk."
         },
         {
-            "name": "Jacek Gmoch",
+            "text": "Jacek Gmoch",
             "description": "Trener piłkarski."
         },
         {
-            "name": "Dariusz Szpakowski",
+            "text": "Dariusz Szpakowski",
             "description": "Komentator sportowy."
         },
         {
-            "name": "Kinga Rusin",
+            "text": "Kinga Rusin",
             "description": "Prezenterka TVN."
         },
         {
-            "name": "Cristiano Ronaldo",
+            "text": "Cristiano Ronaldo",
             "description": "Słynny portugalski piłkarz."
         },
         {
-            "name": "Lionel Messi",
+            "text": "Lionel Messi",
             "description": "Piłkarz z Argentyny, 'Leo'."
         },
         {
-            "name": "Taylor Swift",
+            "text": "Taylor Swift",
             "description": "Wokalistka, megagwiazda muzyki."
         },
         {
-            "name": "Michael Jackson",
+            "text": "Michael Jackson",
             "description": "Król Popu."
         },
         {
-            "name": "Madonna",
+            "text": "Madonna",
             "description": "Królowa Popu."
         },
         {
-            "name": "Leonardo DiCaprio",
+            "text": "Leonardo DiCaprio",
             "description": "Słynny aktor Hollywood."
         },
         {
-            "name": "Tom Hanks",
+            "text": "Tom Hanks",
             "description": "Aktor, bohater wielu filmów."
         },
         {
-            "name": "Brad Pitt",
+            "text": "Brad Pitt",
             "description": "Znany aktor Hollywood."
         },
         {
-            "name": "Angelina Jolie",
+            "text": "Angelina Jolie",
             "description": "Słynna aktorka i aktywistka."
         },
         {
-            "name": "Johnny Depp",
+            "text": "Johnny Depp",
             "description": "Aktor, Kapitan Sparrow."
         },
         {
-            "name": "Arnold Schwarzenegger",
+            "text": "Arnold Schwarzenegger",
             "description": "Aktor i były gubernator."
         },
         {
-            "name": "Marilyn Monroe",
+            "text": "Marilyn Monroe",
             "description": "Gwiazda kina lat 50."
         },
         {
-            "name": "Elvis Presley",
+            "text": "Elvis Presley",
             "description": "Król Rock and Rolla."
         },
         {
-            "name": "Freddie Mercury",
+            "text": "Freddie Mercury",
             "description": "Wokalista zespołu Queen."
         },
         {
-            "name": "Barack Obama",
+            "text": "Barack Obama",
             "description": "Były prezydent USA."
         },
         {
-            "name": "Donald Trump",
+            "text": "Donald Trump",
             "description": "Były prezydent USA."
         },
         {
-            "name": "Królowa Elżbieta II",
+            "text": "Królowa Elżbieta II",
             "description": "Była królowa Anglii."
         },
         {
-            "name": "Albert Einstein",
+            "text": "Albert Einstein",
             "description": "Fizyk, teoria względności."
         },
         {
-            "name": "Winston Churchill",
+            "text": "Winston Churchill",
             "description": "Premier Wielkiej Brytanii."
         },
         {
-            "name": "Michael Jordan",
+            "text": "Michael Jordan",
             "description": "Legendarny koszykarz."
         },
         {
-            "name": "Roger Federer",
+            "text": "Roger Federer",
             "description": "Słynny tenisista."
         },
         {
-            "name": "Serena Williams",
+            "text": "Serena Williams",
             "description": "Słynna tenisistka."
         },
         {
-            "name": "Mike Tyson",
+            "text": "Mike Tyson",
             "description": "Legendarny bokser."
         },
         {
-            "name": "Usain Bolt",
+            "text": "Usain Bolt",
             "description": "Sprinter z Jamajki."
         },
         {
-            "name": "Walt Disney",
+            "text": "Walt Disney",
             "description": "Twórca Myszki Miki."
         },
         {
-            "name": "Bill Gates",
+            "text": "Bill Gates",
             "description": "Założyciel Microsoft."
         },
         {
-            "name": "Steve Jobs",
+            "text": "Steve Jobs",
             "description": "Założyciel Apple."
         },
         {
-            "name": "Mark Zuckerberg",
+            "text": "Mark Zuckerberg",
             "description": "Twórca Facebooka."
         },
         {
-            "name": "Meryl Streep",
+            "text": "Meryl Streep",
             "description": "Słynna aktorka filmowa."
         },
         {
-            "name": "Sylvester Stallone",
+            "text": "Sylvester Stallone",
             "description": "Aktor, 'Rocky'."
         },
         {
-            "name": "Will Smith",
+            "text": "Will Smith",
             "description": "Aktor, 'Faceci w czerni'."
         },
         {
-            "name": "Jackie Chan",
+            "text": "Jackie Chan",
             "description": "Aktor filmów akcji."
         },
         {
-            "name": "Ed Sheeran",
+            "text": "Ed Sheeran",
             "description": "Wokalista, 'Shape of You'."
         },
         {
-            "name": "Beyoncé",
+            "text": "Beyoncé",
             "description": "Piosenkarka R&B, 'Queen B'."
         },
         {
-            "name": "Adele",
+            "text": "Adele",
             "description": "Wokalistka z Wielkiej Brytanii."
         },
         {
-            "name": "Elton John",
+            "text": "Elton John",
             "description": "Piosenkarz, pianista."
         },
         {
-            "name": "George Lucas",
+            "text": "George Lucas",
             "description": "Twórca 'Gwiezdnych Wojen'."
         },
         {
-            "name": "Steven Spielberg",
+            "text": "Steven Spielberg",
             "description": "Słynny reżyser."
         },
         {
-            "name": "Mahatma Gandhi",
+            "text": "Mahatma Gandhi",
             "description": "Przywódca Indii."
         },
         {
-            "name": "Nelson Mandela",
+            "text": "Nelson Mandela",
             "description": "Prezydent RPA, noblista."
         },
         {
-            "name": "Martin Luther King Jr.",
+            "text": "Martin Luther King Jr.",
             "description": "Działacz na rzecz praw."
         },
         {
-            "name": "Dwayne Johnson",
+            "text": "Dwayne Johnson",
             "description": "Aktor, 'The Rock'."
         },
         {
-            "name": "Jennifer Aniston",
+            "text": "Jennifer Aniston",
             "description": "Aktorka z 'Przyjaciół'."
         },
         {
-            "name": "Lady Gaga",
+            "text": "Lady Gaga",
             "description": "Wokalistka, autorka hitów."
         },
         {
-            "name": "The Beatles",
+            "text": "The Beatles",
             "description": "Legendarny brytyjski zespół."
         },
         {
-            "name": "Stephen Hawking",
+            "text": "Stephen Hawking",
             "description": "Słynny astrofizyk."
         },
         {
-            "name": "Dalajlama",
+            "text": "Dalajlama",
             "description": "Duchowy przywódca Tybetu."
         },
         {
-            "name": "Mother Teresa",
+            "text": "Mother Teresa",
             "description": "Siostra, noblistka."
         },
         {
-            "name": "Usher",
+            "text": "Usher",
             "description": "Piosenkarz R&B."
         },
         {
-            "name": "Jackie Kennedy Onassis",
+            "text": "Jackie Kennedy Onassis",
             "description": "Była pierwsza dama USA."
         }
     ],
-    "movies": [
+    "movies-titles": [
         {
-            "title": "Star Wars",
+            "text": "Star Wars",
             "description": "Kosmiczna saga o Jedi i Sithach."
         },
         {
-            "title": "Titanic",
+            "text": "Titanic",
             "description": "Statek, góra lodowa i miłość."
         },
         {
-            "title": "Gwiezdne Wojny",
+            "text": "Gwiezdne Wojny",
             "description": "Rycerze Jedi, walka ze złem."
         },
         {
-            "title": "Harry Potter",
+            "text": "Harry Potter",
             "description": "Chłopiec-czarodziej i Hogwart."
         },
         {
-            "title": "Władca Pierścieni",
+            "text": "Władca Pierścieni",
             "description": "Hobbit, pierścień i Mordor."
         },
         {
-            "title": "Forrest Gump",
+            "text": "Forrest Gump",
             "description": "Życie jest jak pudełko czekoladek."
         },
         {
-            "title": "Matrix",
+            "text": "Matrix",
             "description": "Niebieska czy czerwona pigułka?"
         },
         {
-            "title": "Gladiator",
+            "text": "Gladiator",
             "description": "Cesarz i walka na arenie."
         },
         {
-            "title": "Park Jurajski",
+            "text": "Park Jurajski",
             "description": "Park z dinozaurami."
         },
         {
-            "title": "Kevin sam w domu",
+            "text": "Kevin sam w domu",
             "description": "Chłopiec kontra złodzieje."
         },
         {
-            "title": "Ojciec Chrzestny",
+            "text": "Ojciec Chrzestny",
             "description": "Rodzina mafijna Corleone."
         },
         {
-            "title": "Pulp Fiction",
+            "text": "Pulp Fiction",
             "description": "Gangsterzy, taniec i walizka."
         },
         {
-            "title": "Szczęki",
+            "text": "Szczęki",
             "description": "Rekin ludojad."
         },
         {
-            "title": "Pianista",
+            "text": "Pianista",
             "description": "Pianista w czasie wojny."
         },
         {
-            "title": "Skazani na Shawshank",
+            "text": "Skazani na Shawshank",
             "description": "Ucieczka z więzienia."
         },
         {
-            "title": "Zielona Mila",
+            "text": "Zielona Mila",
             "description": "Strażnicy i skazaniec."
         },
         {
-            "title": "Psychoza",
+            "text": "Psychoza",
             "description": "Morderstwo pod prysznicem."
         },
         {
-            "title": "Avatar",
+            "text": "Avatar",
             "description": "Niebiescy ludzie na Pandorze."
         },
         {
-            "title": "Incepcja",
+            "text": "Incepcja",
             "description": "Podróże w głąb snu."
         },
         {
-            "title": "Król Lew",
+            "text": "Król Lew",
             "description": "Lew Simba i królestwo."
         },
         {
-            "title": "Shrek",
+            "text": "Shrek",
             "description": "Ogr i jego przyjaciele."
         },
         {
-            "title": "Epoka Lodowcowa",
+            "text": "Epoka Lodowcowa",
             "description": "Zwierzęta szukają ciepła."
         },
         {
-            "title": "Szybcy i wściekli",
+            "text": "Szybcy i wściekli",
             "description": "Wyścigi samochodowe, akcja."
         },
         {
-            "title": "Terminator",
+            "text": "Terminator",
             "description": "Roboty z przyszłości."
         },
         {
-            "title": "Rambo",
+            "text": "Rambo",
             "description": "Żołnierz w dżungli."
         },
         {
-            "title": "Rocky",
+            "text": "Rocky",
             "description": "Bokser z Filadelfii."
         },
         {
-            "title": "E.T.",
+            "text": "E.T.",
             "description": "Kosmita i chłopiec."
         },
         {
-            "title": "Obcy: 8. pasażer Nostromo",
+            "text": "Obcy: 8. pasażer Nostromo",
             "description": "Kosmiczny potwór."
         },
         {
-            "title": "Sami swoi",
+            "text": "Sami swoi",
             "description": "Kargul i Pawlak."
         },
         {
-            "title": "Ojciec Chrzestny II",
+            "text": "Ojciec Chrzestny II",
             "description": "Historia rodziny Corleone."
         },
         {
-            "title": "Szeregowiec Ryan",
+            "text": "Szeregowiec Ryan",
             "description": "Ratowanie żołnierza."
         },
         {
-            "title": "Mroczny Rycerz",
+            "text": "Mroczny Rycerz",
             "description": "Batman kontra Joker."
         },
         {
-            "title": "Joker",
+            "text": "Joker",
             "description": "Złowieszczy klaun."
         },
         {
-            "title": "Lśnienie",
+            "text": "Lśnienie",
             "description": "Hotel, pisarz i szaleństwo."
         },
         {
-            "title": "Fight Club",
+            "text": "Fight Club",
             "description": "Klub bijatyk."
         },
         {
-            "title": "Interstellar",
+            "text": "Interstellar",
             "description": "Podróż przez czarną dziurę."
         },
         {
-            "title": "Up",
+            "text": "Up",
             "description": "Staruszek z balonami."
         },
         {
-            "title": "Toy Story",
+            "text": "Toy Story",
             "description": "Zabawki ożywają."
         },
         {
-            "title": "Mulan",
+            "text": "Mulan",
             "description": "Dziewczyna udaje żołnierza."
         },
         {
-            "title": "Krucjata Bourne'a",
+            "text": "Krucjata Bourne'a",
             "description": "Agent traci pamięć."
         },
         {
-            "title": "James Bond",
+            "text": "James Bond",
             "description": "Agent 007, smoking i martini."
         },
         {
-            "title": "Sherlock Holmes",
+            "text": "Sherlock Holmes",
             "description": "Detektyw z fajką i lupą."
         },
         {
-            "title": "Indiana Jones",
+            "text": "Indiana Jones",
             "description": "Archeolog z kapeluszem."
         },
         {
-            "title": "Piraci z Karaibów",
+            "text": "Piraci z Karaibów",
             "description": "Kapitan Sparrow i morze."
         },
         {
-            "title": "Akademia Pana Kleksa",
+            "text": "Akademia Pana Kleksa",
             "description": "Magiczna szkoła."
         },
         {
-            "title": "Chłopaki nie płaczą",
+            "text": "Chłopaki nie płaczą",
             "description": "Gangsterzy i komedia."
         },
         {
-            "title": "Pieniądze to nie wszystko",
+            "text": "Pieniądze to nie wszystko",
             "description": "Komedia o biznesie."
         },
         {
-            "title": "Seksmisja",
+            "text": "Seksmisja",
             "description": "Mężczyźni w świecie kobiet."
         },
         {
-            "title": "Miś",
+            "text": "Miś",
             "description": "Bareja i komedia absurdu."
         },
         {
-            "title": "Kler",
+            "text": "Kler",
             "description": "Film o duchownych."
         },
         {
-            "title": "Jak rozpętałem drugą wojnę światową",
+            "text": "Jak rozpętałem drugą wojnę światową",
             "description": "Franek Dolas i pomyłki."
         },
         {
-            "title": "Krótki film o zabijaniu",
+            "text": "Krótki film o zabijaniu",
             "description": "Film Kieślowskiego."
         },
         {
-            "title": "Podwójne życie Weroniki",
+            "text": "Podwójne życie Weroniki",
             "description": "Dwie takie same kobiety."
         },
         {
-            "title": "Sami swoi",
+            "text": "Sami swoi",
             "description": "Kargul i Pawlak."
         },
         {
-            "title": "Rejs",
+            "text": "Rejs",
             "description": "Rejs statkiem po Wiśle."
         },
         {
-            "title": "Wesele",
+            "text": "Wesele",
             "description": "Film Wojciecha Smarzowskiego."
         },
         {
-            "title": "Dzień Świra",
+            "text": "Dzień Świra",
             "description": "Życie Adasia Miauczyńskiego."
         },
         {
-            "title": "Pieniądze to nie wszystko",
+            "text": "Pieniądze to nie wszystko",
             "description": "Komedia o biznesie."
         },
         {
-            "title": "Krótki film o miłości",
+            "text": "Krótki film o miłości",
             "description": "Kieślowski i podglądanie."
         },
         {
-            "title": "Wesele",
+            "text": "Wesele",
             "description": "Film o weselu."
         },
         {
-            "title": "Dzień Świra",
+            "text": "Dzień Świra",
             "description": "Życie Adasia Miauczyńskiego."
         },
         {
-            "title": "Sami swoi",
+            "text": "Sami swoi",
             "description": "Kargul i Pawlak."
         },
         {
-            "title": "Dzieci z Bullerbyn",
+            "text": "Dzieci z Bullerbyn",
             "description": "Dzieci i ich zabawy."
         },
         {
-            "title": "Miś",
+            "text": "Miś",
             "description": "Bareja i komedia."
         },
         {
-            "title": "Jak rozpętałem drugą wojnę światową",
+            "text": "Jak rozpętałem drugą wojnę światową",
             "description": "Franek Dolas w niewoli."
         },
         {
-            "title": "Ostatnia rodzina",
+            "text": "Ostatnia rodzina",
             "description": "Film o rodzinie Beksińskich."
         },
         {
-            "title": "Zimna wojna",
+            "text": "Zimna wojna",
             "description": "Miłość w czasach komunizmu."
         },
         {
-            "title": "Zemsta",
+            "text": "Zemsta",
             "description": "Zamek, Papkin i kłótnia."
         },
         {
-            "title": "Znachor",
+            "text": "Znachor",
             "description": "Lekarz traci pamięć."
         },
         {
-            "title": "Ogniem i mieczem",
+            "text": "Ogniem i mieczem",
             "description": "Sienkiewicz, film wojenny."
         },
         {
-            "title": "Krzyżacy",
+            "text": "Krzyżacy",
             "description": "Dwie wieże, Grunwald."
         },
         {
-            "title": "Psy",
+            "text": "Psy",
             "description": "Franz Maurer i SB."
         },
         {
-            "title": "Kogel-mogel",
+            "text": "Kogel-mogel",
             "description": "Komedia o wsi i mieście."
         },
         {
-            "title": "Trzy kolory: Niebieski",
+            "text": "Trzy kolory: Niebieski",
             "description": "Francuska saga Kieślowskiego."
         },
         {
-            "title": "Vabank",
+            "text": "Vabank",
             "description": "Kramer i kasiarz Kwinto."
         },
         {
-            "title": "Chłopaki nie płaczą",
+            "text": "Chłopaki nie płaczą",
             "description": "Gangsterzy i komedia."
         },
         {
-            "title": "Drogówka",
+            "text": "Drogówka",
             "description": "Smarzowski, policjanci, miasto."
         },
         {
-            "title": "Lejdis",
+            "text": "Lejdis",
             "description": "Komedia o czterech kobietach."
         },
         {
-            "title": "Listy do M.",
+            "text": "Listy do M.",
             "description": "Świąteczne historie miłosne."
         },
         {
-            "title": "Pianista",
+            "text": "Pianista",
             "description": "Muzyk w czasie okupacji."
         },
         {
-            "title": "Pan Tadeusz",
+            "text": "Pan Tadeusz",
             "description": "Epopeja narodowa, Mickiewicz."
         },
         {
-            "title": "Kiler",
+            "text": "Kiler",
             "description": "Taksówkarz zamieniony w zabójcę."
         },
         {
-            "title": "Wesele",
+            "text": "Wesele",
             "description": "Wesele Smarzowskiego."
         },
         {
-            "title": "Sami swoi",
+            "text": "Sami swoi",
             "description": "Kargul i Pawlak, sąsiedzi."
         },
         {
-            "title": "Miś",
+            "text": "Miś",
             "description": "Bareja, komedia absurdów."
         },
         {
-            "title": "Seksmisja",
+            "text": "Seksmisja",
             "description": "Mężczyźni w świecie kobiet."
         },
         {
-            "title": "Jak rozpętałem II wojnę światową",
+            "text": "Jak rozpętałem II wojnę światową",
             "description": "Przygody Franka Dolasa."
         },
         {
-            "title": "Dzień Świra",
+            "text": "Dzień Świra",
             "description": "Życie Adasia Miauczyńskiego."
         },
         {
-            "title": "Zemsta",
+            "text": "Zemsta",
             "description": "Cześnik kontra Rejent."
         },
         {
-            "title": "Znachor",
+            "text": "Znachor",
             "description": "Lekarz traci pamięć."
         },
         {
-            "title": "Dziewczyny do wzięcia",
+            "text": "Dziewczyny do wzięcia",
             "description": "Przygody trzech dziewczyn."
         },
         {
-            "title": "Noce i Dnie",
+            "text": "Noce i Dnie",
             "description": "Historia rodziny."
         },
         {
-            "title": "Kingsajz",
+            "text": "Kingsajz",
             "description": "Krasnoludki i ich królestwo."
         },
         {
-            "title": "Ogniem i mieczem",
+            "text": "Ogniem i mieczem",
             "description": "Sienkiewicz, czasy Chmielnickiego."
         },
         {
-            "title": "Krzyżacy",
+            "text": "Krzyżacy",
             "description": "Bitwa pod Grunwaldem."
         },
         {
-            "title": "Pieniądze to nie wszystko",
+            "text": "Pieniądze to nie wszystko",
             "description": "Młody biznesmen na wsi."
         },
         {
-            "title": "Katyń",
+            "text": "Katyń",
             "description": "Pamięci ofiar Katynia."
         },
         {
-            "title": "Jasminum",
+            "text": "Jasminum",
             "description": "Mnisi, zapachy i miłość."
         },
         {
-            "title": "Wojna polsko-ruska",
+            "text": "Wojna polsko-ruska",
             "description": "Bohater Silny, dresiarze."
         },
         {
-            "title": "Latający Holender",
+            "text": "Latający Holender",
             "description": "Legenda o statku widmo."
         },
         {
-            "title": "W ciemności",
+            "text": "W ciemności",
             "description": "Ludzie ukrywają się w kanałach."
         }
     ],
     "animals": [
         {
-            "name": "Kot",
+            "text": "Kot",
             "description": "Domowy, łowny i mruczący."
         },
         {
-            "name": "Pies",
+            "text": "Pies",
             "description": "Wierny przyjaciel człowieka."
         },
         {
-            "name": "Lew",
+            "text": "Lew",
             "description": "Król dżungli z grzywą."
         },
         {
-            "name": "Tygrys",
+            "text": "Tygrys",
             "description": "Duży kot w paski."
         },
         {
-            "name": "Słoń",
+            "text": "Słoń",
             "description": "Duże uszy i długa trąba."
         },
         {
-            "name": "Żyrafa",
+            "text": "Żyrafa",
             "description": "Najdłuższa szyja."
         },
         {
-            "name": "Niedźwiedź",
+            "text": "Niedźwiedź",
             "description": "Duży i silny."
         },
         {
-            "name": "Panda",
+            "text": "Panda",
             "description": "Czarno-biały niedźwiedź."
         },
         {
-            "name": "Małpa",
+            "text": "Małpa",
             "description": "Lubi banany i skacze."
         },
         {
-            "name": "Zebra",
+            "text": "Zebra",
             "description": "Koń w czarno-białe paski."
         },
         {
-            "name": "Kangur",
+            "text": "Kangur",
             "description": "Skacze z torbą na brzuchu."
         },
         {
-            "name": "Wilk",
+            "text": "Wilk",
             "description": "Drapieżnik wyjący do księżyca."
         },
         {
-            "name": "Lis",
+            "text": "Lis",
             "description": "Chytry i rudy."
         },
         {
-            "name": "Niedźwiedź polarny",
+            "text": "Niedźwiedź polarny",
             "description": "Żyje na lodowcach."
         },
         {
-            "name": "Wieloryb",
+            "text": "Wieloryb",
             "description": "Największy ssak morski."
         },
         {
-            "name": "Delfin",
+            "text": "Delfin",
             "description": "Inteligentny, skacze z wody."
         },
         {
-            "name": "Rekin",
+            "text": "Rekin",
             "description": "Groźny drapieżnik morski."
         },
         {
-            "name": "Orzeł",
+            "text": "Orzeł",
             "description": "Polski symbol, drapieżny ptak."
         },
         {
-            "name": "Sowa",
+            "text": "Sowa",
             "description": "Ptasie 'mądrości'."
         },
         {
-            "name": "Krokodyl",
+            "text": "Krokodyl",
             "description": "Groźny gad z długą paszczą."
         },
         {
-            "name": "Wąż",
+            "text": "Wąż",
             "description": "Długie, pełzające zwierzę."
         },
         {
-            "name": "Bóbr",
+            "text": "Bóbr",
             "description": "Buduje tamy z gałęzi."
         },
         {
-            "name": "Surykatka",
+            "text": "Surykatka",
             "description": "Stoi na tylnych łapach."
         },
         {
-            "name": "Gepard",
+            "text": "Gepard",
             "description": "Najszybsze zwierzę na lądzie."
         },
         {
-            "name": "Kameleon",
+            "text": "Kameleon",
             "description": "Zmienia kolor skóry."
         },
         {
-            "name": "Hipopotam",
+            "text": "Hipopotam",
             "description": "Duży i gruby, mieszka w wodzie."
         },
         {
-            "name": "Rybka",
+            "text": "Rybka",
             "description": "Pływa w akwarium."
         },
         {
-            "name": "Szczur",
+            "text": "Szczur",
             "description": "Gryzoń, bywa w kanałach."
         },
         {
-            "name": "Wiewiórka",
+            "text": "Wiewiórka",
             "description": "Zbiera orzechy na drzewie."
         },
         {
-            "name": "Jeleń",
+            "text": "Jeleń",
             "description": "Ma duże poroże."
         },
         {
-            "name": "Bizon",
+            "text": "Bizon",
             "description": "Amerykański, duży byk."
         },
         {
-            "name": "Alpaka",
+            "text": "Alpaka",
             "description": "Puchaty, z Ameryki Płd."
         },
         {
-            "name": "Krab",
+            "text": "Krab",
             "description": "Ma szczypce i chodzi bokiem."
         },
         {
-            "name": "Koala",
+            "text": "Koala",
             "description": "Je liście eukaliptusa."
         },
         {
-            "name": "Lemur",
+            "text": "Lemur",
             "description": "Ma duże oczy i długi ogon."
         },
         {
-            "name": "Foka",
+            "text": "Foka",
             "description": "Mieszka w lodowatej wodzie."
         },
         {
-            "name": "Surykatka",
+            "text": "Surykatka",
             "description": "Stoi na tylnych łapach."
         },
         {
-            "name": "Ośmiornica",
+            "text": "Ośmiornica",
             "description": "Ma osiem ramion."
         },
         {
-            "name": "Mysz",
+            "text": "Mysz",
             "description": "Mała, lubi ser."
         },
         {
-            "name": "Biedronka",
+            "text": "Biedronka",
             "description": "Czerwona, w kropki."
         },
         {
-            "name": "Pająk",
+            "text": "Pająk",
             "description": "Ma osiem nóg, robi sieci."
         },
         {
-            "name": "Motyl",
+            "text": "Motyl",
             "description": "Piękne kolorowe skrzydła."
         },
         {
-            "name": "Sikorka",
+            "text": "Sikorka",
             "description": "Mały ptaszek."
         },
         {
-            "name": "Jaskółka",
+            "text": "Jaskółka",
             "description": "Ptak latający nad wodą."
         },
         {
-            "name": "Kura",
+            "text": "Kura",
             "description": "Znosi jajka."
         },
         {
-            "name": "Kogut",
+            "text": "Kogut",
             "description": "Piejący o poranku."
         },
         {
-            "name": "Owca",
+            "text": "Owca",
             "description": "Daje wełnę, beee."
         },
         {
-            "name": "Koń",
+            "text": "Koń",
             "description": "Lubi biegać."
         },
         {
-            "name": "Krowa",
+            "text": "Krowa",
             "description": "Daje mleko, muuu."
         },
         {
-            "name": "Świnia",
+            "text": "Świnia",
             "description": "Różowa, mieszka w chlewie."
         },
         {
-            "name": "Gołąb",
+            "text": "Gołąb",
             "description": "Ptak miejski."
         },
         {
-            "name": "Gęś",
+            "text": "Gęś",
             "description": "Gęga, ma długą szyję."
         },
         {
-            "name": "Koza",
+            "text": "Koza",
             "description": "Lubi góry, ma bródkę."
         },
         {
-            "name": "Żaba",
+            "text": "Żaba",
             "description": "Skacze i kumka."
         },
         {
-            "name": "Bocian",
+            "text": "Bocian",
             "description": "Ptak, symbol Polski."
         },
         {
-            "name": "Jaszczurka",
+            "text": "Jaszczurka",
             "description": "Mały gad."
         },
         {
-            "name": "Żółw",
+            "text": "Żółw",
             "description": "Powolny, ma skorupę."
         },
         {
-            "name": "Bąk",
+            "text": "Bąk",
             "description": "Duży i bzyczący owad."
         },
         {
-            "name": "Mucha",
+            "text": "Mucha",
             "description": "Uciążliwy owad latający."
         },
         {
-            "name": "Komar",
+            "text": "Komar",
             "description": "Mały, kąsający owad."
         },
         {
-            "name": "Pszczoła",
+            "text": "Pszczoła",
             "description": "Robi miód."
         },
         {
-            "name": "Osa",
+            "text": "Osa",
             "description": "Żółto-czarna, żądli."
         },
         {
-            "name": "Kleszcz",
+            "text": "Kleszcz",
             "description": "Mały, nieprzyjemny pasożyt."
         },
         {
-            "name": "Ważka",
+            "text": "Ważka",
             "description": "Latający owad z dużymi oczami."
         },
         {
-            "name": "Dżdżownica",
+            "text": "Dżdżownica",
             "description": "Robak z ziemi."
         },
         {
-            "name": "Ślimak",
+            "text": "Ślimak",
             "description": "Ma dom na plecach."
         },
         {
-            "name": "Mrówka",
+            "text": "Mrówka",
             "description": "Pracowity owad."
         },
         {
-            "name": "Goryl",
+            "text": "Goryl",
             "description": "Duża, silna małpa."
         },
         {
-            "name": "Pangolin",
+            "text": "Pangolin",
             "description": "Ssak z łuskami."
         },
         {
-            "name": "Aligator",
+            "text": "Aligator",
             "description": "Drapieżny gad, jak krokodyl."
         },
         {
-            "name": "Ryś",
+            "text": "Ryś",
             "description": "Duży kot z pędzelkami."
         },
         {
-            "name": "Żubr",
+            "text": "Żubr",
             "description": "Symbol Puszczy Białowieskiej."
         },
         {
-            "name": "Dzik",
+            "text": "Dzik",
             "description": "Leśna świnia."
         },
         {
-            "name": "Kuna",
+            "text": "Kuna",
             "description": "Zwinny drapieżnik."
         },
         {
-            "name": "Wydra",
+            "text": "Wydra",
             "description": "Mieszka nad wodą, łowi ryby."
         },
         {
-            "name": "Kaczka",
+            "text": "Kaczka",
             "description": "Kwak, pływa w stawie."
         },
         {
-            "name": "Łabędź",
+            "text": "Łabędź",
             "description": "Biały ptak na wodzie."
         },
         {
-            "name": "Papuga",
+            "text": "Papuga",
             "description": "Kolorowa, umie mówić."
         },
         {
-            "name": "Pingwin",
+            "text": "Pingwin",
             "description": "Chodzi w fraku, mieszka na lodzie."
         },
         {
-            "name": "Strus",
+            "text": "Strus",
             "description": "Duży, nielotny ptak."
         },
         {
-            "name": "Sokół",
+            "text": "Sokół",
             "description": "Szybki drapieżny ptak."
         },
         {
-            "name": "Sierściuch",
+            "text": "Sierściuch",
             "description": "Małe zwierzątko futerkowe."
         },
         {
-            "name": "Borsuk",
+            "text": "Borsuk",
             "description": "Podziemny, z paskami na pyszczku."
         },
         {
-            "name": "Sarna",
+            "text": "Sarna",
             "description": "Łania, płochliwe zwierzę."
         },
         {
-            "name": "Szop pracz",
+            "text": "Szop pracz",
             "description": "W masce na twarzy."
         },
         {
-            "name": "Jeż",
+            "text": "Jeż",
             "description": "Ma kolce i zjada ślimaki."
         },
         {
-            "name": "Wąż boa",
+            "text": "Wąż boa",
             "description": "Wielki dusiciel."
         },
         {
-            "name": "Delfin butlonosy",
+            "text": "Delfin butlonosy",
             "description": "Inteligentny ssak morski."
         },
         {
-            "name": "Zając",
+            "text": "Zając",
             "description": "Szybki i płochliwy."
         },
         {
-            "name": "Wielbłąd",
+            "text": "Wielbłąd",
             "description": "Ma garby, żyje na pustyni."
         },
         {
-            "name": "Dromader",
+            "text": "Dromader",
             "description": "Ma jeden garb."
         },
         {
-            "name": "Albatros",
+            "text": "Albatros",
             "description": "Ptak morski, duży."
         },
         {
-            "name": "Koliber",
+            "text": "Koliber",
             "description": "Mały ptak, wisi w powietrzu."
         },
         {
-            "name": "Wrona",
+            "text": "Wrona",
             "description": "Czarny, inteligentny ptak."
         },
         {
-            "name": "Kuna",
+            "text": "Kuna",
             "description": "Zwinny drapieżnik leśny."
         },
         {
-            "name": "Zając szarak",
+            "text": "Zając szarak",
             "description": "Płochliwe zwierzę leśne."
         },
         {
-            "name": "Słoń afrykański",
+            "text": "Słoń afrykański",
             "description": "Największy ssak lądowy."
         },
         {
-            "name": "Kot domowy",
+            "text": "Kot domowy",
             "description": "Mruczący, domowy przyjaciel."
         },
         {
-            "name": "Pies domowy",
+            "text": "Pies domowy",
             "description": "Wierny przyjaciel."
         },
         {
-            "name": "Kaczka",
+            "text": "Kaczka",
             "description": "Kwak, pływa w stawie."
         },
         {
-            "name": "Kurczak",
+            "text": "Kurczak",
             "description": "Mały, żółty ptaszek."
         },
         {
-            "name": "Wąż",
+            "text": "Wąż",
             "description": "Długi, pełzający gad."
         },
         {
-            "name": "Pająk krzyżak",
+            "text": "Pająk krzyżak",
             "description": "Pajęczyna z krzyżykiem."
         }
     ]

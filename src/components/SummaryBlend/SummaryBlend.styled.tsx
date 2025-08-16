@@ -3,8 +3,8 @@ import styled from 'styled-components'
 
 const StyledSummaryBlend = styled.div`
   background-color: ${alpha(colors.lightGreen[800], 0.9)};
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -31,6 +31,7 @@ const StyledTime = styled(Paper)`
 `
 const StyledEmoji = styled(Typography)`
   font-size: 100px !important;
+  text-align: center;
 `
 export {
   StyledSummaryBlend,

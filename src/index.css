@@ -6,7 +6,11 @@ a {
 @media only screen and (orientation:landscape) and (max-height: 700px)
 {
   body {
-    /* height: 100%; */
-    overflow: hidden;
+    height: 100vh !important; 
+    padding: 0 !important; 
+    margin: 0 !important;
+    /* overflow: hidden; */
   }
+  div#root { height: 100%; }
+  div#spacer { height: 10px; }
 }

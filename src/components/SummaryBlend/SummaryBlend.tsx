@@ -16,7 +16,6 @@ const SummaryBlend = ({ gameInfo }: SummaryBlend) => {
   const { getGameParams } = useGameLoaderManager()
 
   const { totalWordsCount, guessedCount } = gameInfo
-  const { category, numberOfWords, gameTime } = getGameParams()
 
   const getIcon = () => {
     const result = guessedCount / totalWordsCount
@@ -30,33 +29,38 @@ const SummaryBlend = ({ gameInfo }: SummaryBlend) => {
   }
 
   const handleNextGameClicked = () => {
+    const { category, numberOfWords, gameTime } = getGameParams()
+
     if (category && numberOfWords && gameTime) {
-      window.location.href = `/start/${category}/${numberOfWords}/${gameTime}`
+      window.location.href = `/setup/${category}/${numberOfWords}/${gameTime}`
     } else {
-      window.location.href = `/start`
+      window.location.href = `/setup`
     }
   }
 
   return (
     <StyledSummaryBlend>
-      <Stack direction="column" spacing={2}>
-        <Stack direction="row" spacing={2}>
-          <StyledTime>
-            <Stack direction="column" alignItems="center" spacing={2}>
-              <Typography variant="h3">Score:</Typography>
-              {getIcon()}
-              <Typography variant="h2">{guessedCount} / {totalWordsCount}</Typography>
-            </Stack>
-          </StyledTime>
-
+      <Stack direction="column" alignItems="center" spacing={2}>
+        <Stack direction="row" alignItems="center" spacing={2}>
+          {
+            totalWordsCount &&
+            <StyledTime>
+              <Stack direction="column" alignItems="center" spacing={2}>
+                <Typography variant="h3">Score:</Typography>
+                {getIcon()}
+                <Typography variant="h2">{guessedCount} / {totalWordsCount}</Typography>
+              </Stack>
+            </StyledTime>
+          }
           <Stack direction="column" spacing={3} sx={{ height: "100%" }} >
-            <StyledEmoji variant='h1' >🐇</StyledEmoji>
+            <StyledEmoji variant='h1'>🐇</StyledEmoji>
             <Typography variant="h3" color="text.secondary">Yeah, bunny!</Typography>
           </Stack>
         </Stack>
 
         <Button
           variant='contained'
+          fullWidth
           onClick={handleNextGameClicked}
           sx={{ fontSize: "1.5em" }}
         >

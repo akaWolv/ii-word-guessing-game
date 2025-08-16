@@ -16,10 +16,8 @@ const useGameManager = () => {
   const { resumeTimer, stopTimer } = useStopwatchManager()
 
   const [currentWord, setCurrentWord] = useState<Word | {}>({})
-  const [wordList, setWordList] = useState<Word[]>(loadGameWords())
+  const [wordList, setWordList] = useState<Word[]>(loadGameWords() || [])
   const [gameInfo, setGameInfo] = useState<GameInfo>({ totalWordsCount: 0, guessedCount: 0, toGuessCount: 0})
-
-  const _setNewRandomWord = () => setCurrentWord(_getRandomWord())
 
   const _getAvailableWords = (): Word[] => wordList.filter(({ isGuessed }) => !isGuessed);
 
@@ -27,14 +25,6 @@ const useGameManager = () => {
     const availableWordsList = _getAvailableWords();
     const randomIndex = Math.floor((Math.random() * availableWordsList.length));
     return availableWordsList[randomIndex] || {} as Word;
-  }
-
-  const setCurrentWordAsGuessed = () => {
-    const { id: currentWordId } = currentWord as Word
-    if (currentWordId) {
-      const restOfWords = wordList.filter(({ id }) => id !== currentWordId)
-      setWordList([...restOfWords, { ...currentWord, isGuessed: true } as Word])
-    }
   }
 
   const _calculateStats = () => {
@@ -53,19 +43,37 @@ const useGameManager = () => {
     })
   }
 
-  useEffect(() => {
-    _setNewRandomWord()
-    _calculateStats()
-    saveGameWords(wordList)  
+  const setNewRandomWord = () => setCurrentWord(_getRandomWord())
+  const pauseGame = () => stopTimer()
+  const resumeGame = () => resumeTimer()
 
+  const setCurrentWordAsGuessed = () => {
+    const { id: currentWordId } = currentWord as Word
+    if (currentWordId) {
+      const restOfWords = wordList.filter(({ id }) => id !== currentWordId)
+      setWordList([...restOfWords, { ...currentWord, isGuessed: true } as Word])
+    }
+  }
+
+  useEffect(() => {
+    if (!wordList) {
+      return;
+    }
+
+    saveGameWords(wordList)  
     resumeTimer()
+    setNewRandomWord()
+    _calculateStats()
   }, [wordList])
 
   return {
+    setNewRandomWord,
     setCurrentWordAsGuessed,
     currentWord: ((): Word => currentWord as Word)(),
     gameInfo: ((): GameInfo => gameInfo as GameInfo)(),
     isGameInProgress: ((): boolean => isAnyTimeLeft && gameInfo.toGuessCount > 0)(),
+    pauseGame,
+    resumeGame
   }
 }
 
