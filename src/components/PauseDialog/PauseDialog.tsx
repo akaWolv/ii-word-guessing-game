@@ -54,8 +54,8 @@ const PauseDialog: React.FC<any> = ({ children, pauseGame, resumeGame }: PauseDi
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleNextGameClicked}>Exit game</Button>
-          <Button onClick={handleClose} autoFocus>Back to game</Button>
+          <Button onClick={handleNextGameClicked} fullWidth>Exit game</Button>
+          <Button onClick={handleClose} fullWidth>Back to game</Button>
         </DialogActions>
       </Dialog>
     </React.Fragment>

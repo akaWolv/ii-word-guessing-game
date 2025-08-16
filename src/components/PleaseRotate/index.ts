@@ -1,1 +1,1 @@
-export { default } from './PauseDialog'
+export { default } from './PleaseRotate'

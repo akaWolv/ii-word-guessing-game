@@ -1,12 +1,14 @@
 import styled from 'styled-components'
 
 const StyledStartLevel = styled.div`
-  width: 100vw;
-  height: 80vh;
+  min-width: 90vw;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  gap: 20px;
 `
 export {
   StyledStartLevel

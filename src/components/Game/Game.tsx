@@ -8,7 +8,7 @@ import useGameManager from '_hooks/useGameManager';
 import SummaryBlend from 'components/SummaryBlend';
 import { useGesture } from '@use-gesture/react'
 import { Refresh, ThumbUp } from '@mui/icons-material';
-import PauseDialog from 'components/PleaseRotate';
+import PauseDialog from 'components/PauseDialog';
 
 const Game: React.FC<any> = () => {
   const {

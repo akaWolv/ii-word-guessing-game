@@ -1,10 +1,10 @@
-import React from 'react'
-import { useSelector } from 'react-redux'
+// import React from 'react'
+// import { useSelector } from 'react-redux'
 import { Button, Chip, Stack, Typography } from '@mui/material'
 import { GameInfo } from 'interfaces'
 import { StyledSummaryBlend, StyledTime, StyledEmoji } from './SummaryBlend.styled'
 import { ThumbUp, Verified, VolunteerActivism } from '@mui/icons-material';
-import type { RootState } from 'stores/stopwatch'
+// import type { RootState } from 'stores/stopwatch'
 import useGameLoaderManager from '_hooks/useGameLoaderManager'
 
 interface SummaryBlend {
@@ -12,7 +12,7 @@ interface SummaryBlend {
 }
 
 const SummaryBlend = ({ gameInfo }: SummaryBlend) => {
-  const time = useSelector((state: RootState) => state.stopwatch.time)
+  // const time = useSelector((state: RootState) => state.stopwatch.time)
   const { getGameParams } = useGameLoaderManager()
 
   const { totalWordsCount, guessedCount } = gameInfo

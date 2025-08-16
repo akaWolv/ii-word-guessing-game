@@ -5,8 +5,13 @@ import ThemeSwitch from 'components/ThemeSwitch';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import { useParams } from 'react-router-dom';
 import { StyledGame, StyledLogo, StyledPaper } from './Setup.styled';
+import {default as SetupConfig} from 'constants/Setup'
 
-const Start: React.FC<any> = () => {
+const Setup: React.FC<any> = () => {
+  // const selectCategories = import.meta.env.VITE_AVAILABLE_CATEGORIES ? import.meta.env.VITE_AVAILABLE_CATEGORIES.split(',') : [];
+  // const selectWordListSizes = import.meta.env.VITE_AVAILABLE_WORDS_LIST_SIZES ? import.meta.env.VITE_AVAILABLE_WORDS_LIST_SIZES.split(',') : [];
+  // const selectTimes = import.meta.env.VITE_AVAILABLE_GAME_TIMES ? import.meta.env.VITE_AVAILABLE_GAME_TIMES.split(',') : [];
+
   const {
     category: defaultCategory,
     numberOfWords: defaultNumberOfWords,
@@ -16,6 +21,9 @@ const Start: React.FC<any> = () => {
   const [category, setCategory] = React.useState(defaultCategory || '');
   const [numberOfWords, setNumberOfWords] = React.useState(defaultNumberOfWords || '');
   const [gameTime, setGameTime] = React.useState(defaultGameTime || '');
+  const [availableCategories, setAvailableCategories] = React.useState(SetupConfig.availableCategories || []);
+  const [availableWordListSizes, setAvailableWordListSizes] = React.useState(SetupConfig.availableWordListSizes || []);
+  const [availableTimes, setAvailableTimes] = React.useState(SetupConfig.availableTimes || []);
 
   const handleChangeCategory = (event: SelectChangeEvent) => setCategory(event.target.value as string)
   const handleChangeNumberOfWords = (event: SelectChangeEvent) => setNumberOfWords(event.target.value as string)
@@ -62,9 +70,7 @@ const Start: React.FC<any> = () => {
               variant="filled"
               onChange={handleChangeCategory}
             >
-              <MenuItem value={'animals'}>Zwierzeta</MenuItem>
-              <MenuItem value={'popular-people'}>Znane Osoby</MenuItem>
-              <MenuItem value={'movies-titles'}>Tytuły Filmów</MenuItem>
+              { availableCategories.map(({name, value}) => <MenuItem key={value} value={value}>{name}</MenuItem>) }
             </Select>
           </FormControl>
         </Stack>
@@ -85,9 +91,7 @@ const Start: React.FC<any> = () => {
               variant="filled"
               onChange={handleChangeNumberOfWords}
             >
-              <MenuItem value={'10'}>10</MenuItem>
-              <MenuItem value={'20'}>20</MenuItem>
-              <MenuItem value={'40'}>40</MenuItem>
+              { availableWordListSizes.map(({name, value}) => <MenuItem key={value} value={value}>{name}</MenuItem>) }
             </Select>
           </FormControl>
           <FormControl fullWidth>
@@ -100,16 +104,7 @@ const Start: React.FC<any> = () => {
               variant="filled"
               onChange={handleChangeGameTime}
             >
-              <MenuItem value={'60'}>1:00</MenuItem>
-              <MenuItem value={'120'}>2:00</MenuItem>
-              <MenuItem value={'180'}>3:00</MenuItem>
-              <MenuItem value={'240'}>4:00</MenuItem>
-              <MenuItem value={'300'}>5:00</MenuItem>
-              <MenuItem value={'360'}>6:00</MenuItem>
-              <MenuItem value={'420'}>7:00</MenuItem>
-              <MenuItem value={'480'}>8:00</MenuItem>
-              <MenuItem value={'540'}>9:00</MenuItem>
-              <MenuItem value={'600'}>10:00</MenuItem>
+              { availableTimes.map(({name, value}) => <MenuItem key={value} value={value}>{name}</MenuItem>) }
             </Select>
           </FormControl>
         </Stack>
@@ -122,4 +117,4 @@ const Start: React.FC<any> = () => {
   )
 }
 
-export default Start
+export default Setup

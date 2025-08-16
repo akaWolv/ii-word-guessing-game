@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { Typography } from '@mui/material'
+import { Alert, Stack, Typography } from '@mui/material'
 // import useBoardGenerator from '_hooks/useBoardGenerator'
 // import useBoardHelper from '_hooks/useBoardHelper'
 import HourglassBottomTwoToneIcon from '@mui/icons-material/HourglassBottomTwoTone';
@@ -13,16 +13,32 @@ const LoadingScreen: React.FC<any> = () => {
   const { setUpNewGame } = useGameLoaderManager()
   const { resetTimer } = useStopwatchManager()
 
+  const [error, setError] = React.useState('');
+
   useEffect(() => {
     resetTimer(parseInt(gameTime || ''))
     setUpNewGame(category, parseInt(numberOfWords || ''), parseInt(gameTime || ''))
-    setTimeout(() => { window.location.href = `/game` }, 0)
+      .then((response) => {
+        if (response) {
+          setTimeout(() => { window.location.href = `/game` }, 0)
+        } else {
+          setError('Loading game failed, params are icorrected, please try again.')
+          setTimeout(() => { window.location.href = `/setup` }, 3000)
+        }
+      })
+      .catch((error) => {
+        setError(`${error.name}: ${error.message}`)
+        console.error(error)
+      })
   }, [])
 
-  return <StyledStartLevel>
-    <HourglassBottomTwoToneIcon sx={{ fontSize: 80 }} />
-    <Typography variant='h4'>game is loading...</Typography>
-  </StyledStartLevel>
+  return (
+    <StyledStartLevel>
+        <HourglassBottomTwoToneIcon sx={{ fontSize: 80 }} />
+        <Typography variant='h4'>game is loading...</Typography>
+        {error && <Alert severity="error">{error}</Alert>}
+    </StyledStartLevel>
+  )
 }
 
 export default LoadingScreen
