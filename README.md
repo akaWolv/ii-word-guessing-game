@@ -8,7 +8,7 @@ yarn dev
 
 Production
 ```
-pm2 start yarn --interpreter bash --name "ii-sudoku" -- start
+pm2 start yarn --interpreter bash --name "ii-word-guessing-game" -- start
 ```
 
 Color ```rgb(209,0,164)```
