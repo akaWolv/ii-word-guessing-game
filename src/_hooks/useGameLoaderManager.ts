@@ -55,6 +55,7 @@ const useGameLoaderManager = () => {
   }
 
   const saveGameWords = (words: Word[]) => {
+    console.log(words.map(({text}) => text))
     Cookie.set(GAME_WORDS_COOKIE, JSON.stringify(words))
   }
 

@@ -27,7 +27,7 @@ const StyledLogo = styled.img`
 
 // Middle section
 const TextStyledContainer = styled.div`
-  max-width: 80vw !important;
+  max-width: 75vw !important;
   flex-grow: 2;   
   display: flex;
   justify-content: center;
