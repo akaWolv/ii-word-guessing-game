@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { Alert, Stack, Typography } from '@mui/material'
-// import useBoardGenerator from '_hooks/useBoardGenerator'
-// import useBoardHelper from '_hooks/useBoardHelper'
+import { Alert, Typography } from '@mui/material'
 import HourglassBottomTwoToneIcon from '@mui/icons-material/HourglassBottomTwoTone';
 import { StyledStartLevel } from 'components/LoadingScreen/LoadingScreen.styled'
 import useStopwatchManager from '_hooks/useStopwatchManager'

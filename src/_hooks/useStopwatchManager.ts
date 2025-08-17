@@ -65,18 +65,12 @@ const useStopwatchManager = () => {
     setIsRunning(false)
   }
 
-  // const restartTimer = (time: number) => {
-  //   resetTimer(time)
-  //   resumeTimer()
-  // }
-
   useEffect(loop, [isRunning])
 
   return {
     resumeTimer,
     resetTimer,
     stopTimer,
-    // restartTimer
   }
 }
 

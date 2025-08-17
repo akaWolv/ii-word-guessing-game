@@ -11,10 +11,7 @@ export default defineConfig(({ mode }) => {
       tsconfigPaths(),
       mix({
         handler: './api/api.js',
-      }),
-      mix({
-        handler: './api/words.js',
-      }),
+      })
     ],
     build: {
       outDir: 'build',
