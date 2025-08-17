@@ -4,7 +4,7 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 import mix from 'vite-plugin-mix'
 
 export default defineConfig(({ mode }) => {
-  const { PORT } = loadEnv(mode, process.cwd(), '')
+  const { PORT, HOST } = loadEnv(mode, process.cwd(), '')
   return {
     plugins: [
       react(),
@@ -13,19 +13,19 @@ export default defineConfig(({ mode }) => {
         handler: './api/api.js',
       })
     ],
-    build: {
-      outDir: 'build',
-      rollupOptions: {
-        output: {
-          manualChunks: undefined,
-          entryFileNames: 'assets/[name].js',
-          assetFileNames: 'assets/[name].[ext]'
-        }
-      }
-    },
+    // build: {
+    //   outDir: 'build',
+    //   rollupOptions: {
+    //     output: {
+    //       manualChunks: undefined,
+    //       entryFileNames: 'assets/[name].js',
+    //       assetFileNames: 'assets/[name].[ext]'
+    //     }
+    //   }
+    // },
     server: {
       port: Number(PORT),
-      host: 'localhost',
+      host: String(HOST),
     },
   }
 })
