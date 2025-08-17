@@ -77,7 +77,6 @@ const Game: React.FC<any> = () => {
         <TextStyledContainer>
           <Typography variant="h1" onClick={() => setCurrentWordAsGuessed()}>{wordText || ''}</Typography>
           <Typography variant="subtitle1" color="text.secondary" sx={{ fontSize: "1.2em" }} >{wordDescription || ''}</Typography>
-          {/* <button onClick={() => setCurrentWordAsGuessed()} >Guess</button> */}
         </TextStyledContainer>
         <Stack
           direction="row"
